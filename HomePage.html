@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Sunrise Web</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    </head>
+    <body>
+      <div>
+        <header>
+            <h1>Sunrise</h1>
+        </header>
+      </div>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AAAAAAA</a></li>
+                <li><a href="#">BBBBBBB</a></li>
+                <li><a href="#">CCCCCCC</a></li>
+                <li><a href="#">DDDDDDD</a></li>
+                <li><a href="#">EEEEEEE</a></li>
+            </ul>
+        </nav>
+        <div id="wave-border">
+          <p>​</p>
+        </div>
+        <h1 id="test">Hello, world!</h1>
+    <button id="btn-es">Español</button>
+    <button id="btn-en">Inglés</button>
+    <button id="btn-bg">Búlgaro</button>
+    
+    </body>
+    <script src="js/aiTraduc.js"></script>
+    <script src="js/aiOndul.js"></script>
+</html>
+
+<style>
+    .customSelectWrapper {
+      width: 100px;
+      text-align: center;
+      position: relative;
+      color: #000;
+      border: 1px solid #333;
+      border-radius: 20px;
+      padding: 5px 2px;
+    }
+    
+    #activate-btn {
+      opacity: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    
+    .customBtnWrap {
+      display: none;
+    } 
+    
+    #activate-btn:checked + .customBtnWrap {
+      display: flex;
+      position: absolute;
+      top: 29px;
+      flex-direction: column;
+      width: 100%;
+      color: #000;
+    }
+    
+    .customBtnWrap button {
+        background: #e0e0e0;
+        padding: 7px 0px;
+        border: none;
+    }
+    
+    .customBtnWrap button:hover {
+      background: #d2d2d2;
+    }
